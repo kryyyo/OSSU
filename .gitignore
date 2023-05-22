@@ -1,1 +1,7 @@
 edx.txt
+
+# Ignore folders named "Homework"
+/Homework/
+
+# Ignore files starting with "Homework"
+hw*
