@@ -1,0 +1,2 @@
+datatype exp = Constant of int
+| Negate 
