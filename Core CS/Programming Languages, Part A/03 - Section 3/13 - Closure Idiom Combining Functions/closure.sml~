@@ -1,0 +1,6 @@
+
+
+(* ('b -> 'c) * ('a -> 'b) -> ('a -> 'c) *)
+fun compose (f, g) = fn x => f(g x)
+			     
+			      

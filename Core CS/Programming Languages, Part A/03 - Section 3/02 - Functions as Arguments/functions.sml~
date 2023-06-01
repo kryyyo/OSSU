@@ -1,0 +1,17 @@
+
+fun increment_n_times_lame (n, x) = (* n + x *)
+    if n = 0
+    then x
+    else 1 + increment_n_times_lame(n-1, x)
+
+fun double_n_times_lame (n, x) = (* 2^n * x *)
+    if n = 0
+    then x
+    else 2 * double_n_times_lame(n-1, x)
+
+fun nth_tail_lame (n, xs) = (* example 3, [4, 8, 12, 16] -> [16] *)
+    if n = 0
+    then xs
+    else tl (nth_tail_lame(n-1, xs))
+
+	    
