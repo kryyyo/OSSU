@@ -1,0 +1,13 @@
+#lang racket
+(provide (all-defined-out))
+
+(define (factorial-normal x)
+  (if (= x 0)
+      1
+      (* x (factorial-normal (- x 1)))))
+
+(define (my-if-bad x y z)
+  (if x y z))
+
+(define (factorial-bad x)
+  (
